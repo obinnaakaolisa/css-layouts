@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+html, body {
+    background: var(--very-light-gray);
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 20px 45px;
+    min-height: 420px;
+    max-width: 300px;
+}
+
+.card img {
+    margin: 15px 0;
+}
+
+.card h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    margin: 15px 0;
+}
+
+.card p {
+    color: var(--transparent-white);
+    margin: 15px 0;
+}
+
+.card a {
+    color: var(--very-light-gray);
+    margin: 40px 0 20px 0;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.card.bright-orange {
+    background: var(--bright-orange);
+    border-radius: 5px 0 0 5px;
+}
+
+.card.dark-cyan {
+    background: var(--dark-cyan);
+    border-radius: 0px;
+}
+
+.card.very-dark-cyan {
+    background: var(--very-dark-cyan);
+    border-radius:  0 5px 5px 0;
+}
+
+@media screen and (max-width:375px) {
+        
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 80%;
+        margin: 10px;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 20px 45px;
+        min-height: 420px;
+        max-width: 300px;
+        margin: 10px 0;
+        border-radius: 5px !important;
+    }
+
+}
+
+@media screen and (max-width:512) {
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 80%;
+        margin: 10px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding: 20px 45px;
+        min-height: 420px;
+        max-width: 300px;
+        margin: 10px 0;
+        border-radius: 5px !important;
+    }
+  
+}
+
+@media screen and (max-width:1440px) {
+    
+    .cards {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+  
+}
